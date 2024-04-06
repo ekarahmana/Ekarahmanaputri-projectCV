@@ -1,0 +1,373 @@
+
+/* 01. Basic Styles
+ * =================================================================== */
+html,body{
+  height: 100%;
+}
+ html {
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+}
+h2{
+  font-weight: 500;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+h5 {
+  font-weight: 600;
+}
+
+a {
+  cursor: pointer;
+  color: #6fcdba;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:none;
+  color: #1abc9c;
+  opacity: 0.9;
+}
+
+hr {
+  border-top: 5px solid #1abc9c;
+  width: 80px;
+  padding-bottom: 20px;
+}
+
+
+.colour-splash {
+  color: #ffffff;
+}
+
+.section-primary span {
+  color: #1abc9c;
+  font-weight: bolder;
+  opacity: 1;
+}
+/* 02. Intro
+* =================================================================== */
+
+.section-image {
+ background-image: #151515 url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fmobile-legends-angela-vespid-wallpaper-gjvyt&psig=AOvVaw0erwE5ggScazyapNyvwkTo&ust=1712371111792000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPC569GFqoUDFQAAAAAdAAAAABAK) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  display:table;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: .7;
+  color: #f6f4f9;
+}
+
+.intro {
+  vertical-align: middle;
+  text-align: center;
+  display:table-cell;
+  -webkit-transform: translateY(-2.1rem);
+  -ms-transform: translateY(-2.1rem);
+  transform: translateY(-2.1rem);
+}
+
+.intro .row {
+  margin-right: 0;
+  margin-left:0;
+}
+
+.intro h1 {
+  font-size: 84px;
+}
+
+.intro h5 {
+  color: #1abc9c;
+  font-size: 2.3rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  text-shadow: 0 0 6px rgba(82, 11, 11, 0.2);
+}
+
+.section-image span {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  padding: 0 10px;
+  font-weight: 100;
+}
+
+.section-image h1 {
+  margin-top: 0;
+}
+
+.section-image p {
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+
+.lnr {
+  font-size: 4em !important;
+  color:#fff;
+}
+
+/* 03. Section Styles
+* =================================================================== */
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.profilepic {
+  height: 500px;
+  width: auto;
+  border-radius: 300px;
+}
+
+.section-primary p {
+  text-align: justify;
+}
+
+.section-primary {
+  border: #1abc9c;
+}
+
+.section-colour {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.section-colour p {
+  text-align: justify;
+}
+
+.section-heading .lead, .section-heading h2 {
+  text-align: center;
+  color:#f6f4f9;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.section-colour {
+  border: #ffffff;
+}
+
+.section-colour hr {
+  border-top: 5px solid #ffffff;
+}
+
+
+#skill {
+  background: #ffffff url(https://s1.zerochan.net/Hanabi.%28Mobile.Legends%3A.Bang.Bang%21%29.600.3426430.jpg) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  color:#ffffff;
+}
+.h2{
+  color:#fffefe;
+}
+
+
+/* 04. Footer
+* =================================================================== */
+
+footer {
+  display: block;
+  position: static;
+  bottom: 0;
+  background-color: black;
+  color: #fff;
+  padding: 50px 0;
+
+}
+
+footer p {
+  padding: 15px;
+  opacity: 0.8;
+}
+
+      @keyframes scrolling {
+      0% {
+          opacity: 0;
+          top: 5px;
+      }
+      30% {
+          opacity: 1;
+          top: 10px;
+      }
+      100% {
+          opacity: 0;
+          top: 25px;
+      }
+      }
+
+      .pad-xl {
+          padding: 200px 0px;
+      }
+
+      .pad-lg {
+          padding: 160px 0px;
+      }
+
+      .pad-sm {
+          padding: 80px 0px;
+      }
+
+      .pad-xs {
+          padding: 30px 0px;
+      }
+
+@media (max-width: 480px) {
+  .social a {
+      padding: 0.4em;
+      font-size: 0.9em;
+  }
+
+  .social-footer {
+      text-align: center;
+      position:block;
+      text-align: center;
+  }
+
+  .social-footer a {
+      padding: 0.3em;
+      font-size: 1.6em;
+
+  }
+
+  .intro-desc {
+      font-size: 0.7em;
+  }
+
+  .section-image span {
+      font-size: 1em;
+      padding: 0 1px;
+
+}
+
+  .intro h1 {
+      font-size: 50px;
+      padding-top: 15px;
+  }
+
+  footer {
+      text-align: center;
+      padding-bottom: 100px;
+  }
+
+  #skills {
+      background: #151515 url(https://s1.zerochan.net/Hanabi.%28Mobile.Legends%3A.Bang.Bang%21%29.600.3426430.jpg) no-repeat center center;
+      background-position: top center;
+
+  }
+}
+
+@media (max-width: 991px) {
+  .social-footer {
+      text-align: center;
+  }
+
+  footer p {
+  text-align: center;
+  }
+
+}
+
+ header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background: #796666;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, arial, tahoma, verdana;
+  line-height: 20px;
+  font-size: 14px;
+  color: #fdfbff;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Dosis", arial, tahoma, verdana;
+  font-weight: 500;
+}
+
+.project-name {
+  text-align: center;
+  padding: 10px 0;
+}
+
+header {
+  background: #1abc9c;
+  padding: 10px;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+}
+header .logo {
+  color: #1abc9c;
+  float: left;
+  font-family: "Dosis", arial, tahoma, verdana;
+  font-size: 22px;
+  font-weight: 500;
+}
+header .logo > span {
+  color: #f7aaaa;
+  font-weight: 300;
+}
+header .social {
+  float: right;
+}
+header .social .btn {
+  font-family: "Dosis";
+  font-size: 14px;
+  margin: 10px 5px;
+}
